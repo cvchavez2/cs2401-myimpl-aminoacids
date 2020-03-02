@@ -35,8 +35,8 @@ Your class will also have several static methods that are used to construct and 
 
 ## Given 
 You will be provided with a java class `AminoAcidResources.java` (it is already in your repository) which will have the following methods:
-* `public static char getAminoAcidFromCodon(String s)` -- given a String with 3 characters, returns the Amino Acid character
-* `public static String[] getCodonListForAminoAcid(char a)` -- given an Amino Acid character, returns an array of all possible codons as strings. 
+* `public static char getAminoAcidFromCodon(String s)` -- given a String with 3 characters, returns the Amino Acid character. If the codon is invalid the method will return NULL. If the codon is a STOP, the method will return `*`.
+* `public static String[] getCodonListForAminoAcid(char a)` -- given an Amino Acid character, returns an array of all possible codons as strings. If the character is not an AminoAcid, the method will return an empty array.  
 
 ## What to turn in
 1. `AminoAcidLL.java`
