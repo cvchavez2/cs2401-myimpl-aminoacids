@@ -8,7 +8,7 @@ To convert from RNA into Amino Acids your cells use a specific code to convert 3
 The codon to Amino Acid map is shown in the figure below. 
 Notice that each codon encodes only 1 Amino Acid, but each Amino Acid may corespond to multiple codon sequences. 
 
-![](codon.jpg)
+![](images/codon.jpg)
 
 Some codons enode a "stop", which halts translation at that point. 
 As cells evolve the RNA sequences change which may or may not change the protein sequences. 
