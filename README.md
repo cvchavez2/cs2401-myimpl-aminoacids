@@ -27,11 +27,11 @@ The methods you will need to create and manage your linked lists for each sequen
 * `public int codonCompare(AminoAcidLL inList)` -- this is a recursive method that returns the difference in counts between the two lists of Amino Acids based on the individual codon counts (while the `totalCount()` difference may be 0, the codon difference may be non-zero). 
 * `public char[] aminoAcidList()` -- returns an array of the amino acids characters (in the order which they are in within the linked list). 
 * `public int[] aminoAcidCounts()` -- returns an array of the counts of the amino acids (in the order which they are in within the linked list). 
-* `private boolean isSorted()` -- a recursive method that determines if the remainder of a given linked list is already sorted. 
+* `public boolean isSorted()` -- a recursive method that determines if the remainder of a given linked list is already sorted. 
 
 Your class will also have several static methods that are used to construct and sort a linked list
 * `public static AminoAcidLL createFromRNASequence(String inSequence)` -- this will take in the RNA sequence and return the linked list containing only the Amino Acids present in the seuqnece, with the codon counts propigated. Note that the STOP codon does not actually exist in the list, but indicates when translation should stop (this may come before the end of the string). 
-* `private void sort(AminoAcidLL inList)` -- sorts the given linked list by the Amino Acid character in alphanumeric order. 
+* `public AminoAcidLL sort(AminoAcidLL inList)` -- sorts the given linked list by the Amino Acid character in alphanumeric order and returns the new starting node. 
 
 ## Given 
 You will be provided with a java class `AminoAcidResources.java` (it is already in your repository) which will have the following methods:
