@@ -22,7 +22,7 @@ Create a new linked list type, `AminoAcidLL`, which holds:
 
 The methods you will need to create and manage your linked lists for each sequence are:
 * `private void addCodon(String inCodon)` -- this will (recursively) add the codon to the linked list, if the Amino Acid already exists it will add it to the count on that node, otherwise it will create a new node. 
-* `private void totalCount()` -- this will return the number of times this amino acid is used in the sequence (the sum of all of the codon counts).
+* `private int totalCount()` -- this will return the number of times this amino acid is used in the sequence (the sum of all of the codon counts).
 * `public int aminoAcidCompare(AminoAcidLL inList)` -- this is a recursive method that returns the difference in counts between two lists of Amino Acids (using the `totalCount()` value). 
 * `public int codonCompare(AminoAcidLL inList)` -- this is a recursive method that returns the difference in counts between the two lists of Amino Acids based on the individual codon counts (while the `totalCount()` difference may be 0, the codon difference may be non-zero). 
 * `public char[] aminoAcidList()` -- returns an array of the amino acids characters (in the order which they are in within the linked list). 
