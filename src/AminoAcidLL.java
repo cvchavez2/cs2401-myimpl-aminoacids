@@ -17,14 +17,6 @@ class AminoAcidLL{
   
   }
 
-
-  /********************************************************************************************/
-  /* Given a codon string, finds the index for that codon and increments the count */
-  private void incrementCodon(String inCodon){
-  
-  }
-
-
   /********************************************************************************************/
   /* Recursive method that increments the count for a specific codon:
    * If it should be at this node, increments it and stops, 
@@ -48,13 +40,6 @@ class AminoAcidLL{
   public int aminoAcidCompare(AminoAcidLL inList){
     return 0;
   }
-
-  /********************************************************************************************/
-  /* helper method for finding the list difference on two matching nodes */
-  private int codonDiff(AminoAcidLL inList){
-    return 0;
-  }
-
 
   /********************************************************************************************/
   /* Same ad above, but counts the codon usage differences
