@@ -19,6 +19,7 @@ Create a new linked list type, `AminoAcidLL`, which holds:
 * `private char aminoAcid` -- the character representing the Amino Acid stored in this element
 * `private String[] codons` -- the codons that represent this Amino Acid
 * `private int[] counts` -- the count of the codon usage (`codons.length` will be equal to `counts.length`)
+* `private AminoAcidLL next` -- the next element in the linked list, had the value `NULL` when the current element is the last
 
 The methods you will need to create and manage your linked lists for each sequence are:
 * `private void addCodon(String inCodon)` -- this will (recursively) add the codon to the linked list, if the Amino Acid already exists it will add it to the count on that node, otherwise it will create a new node. 
@@ -31,7 +32,7 @@ The methods you will need to create and manage your linked lists for each sequen
 
 Your class will also have several static methods that are used to construct and sort a linked list
 * `public static AminoAcidLL createFromRNASequence(String inSequence)` -- this will take in the RNA sequence and return the linked list containing only the Amino Acids present in the seuqnece, with the codon counts propigated. Note that the STOP codon does not actually exist in the list, but indicates when translation should stop (this may come before the end of the string). 
-* `private void sort(AminoAcidLL inList)` -- sorts the given linked list by the Amino Acid character in alphanumeric order. 
+* `private sort void sort(AminoAcidLL inList)` -- sorts the given linked list by the Amino Acid character in alphanumeric order. 
 
 ## Given 
 You will be provided with a java class `AminoAcidResources.java` (it is already in your repository) which will have the following methods:
@@ -51,6 +52,30 @@ Late policy:
 * 0 points for assignments turned in later, but should still be turned in for feedback. 
 
 ## Grading
+| Points | Item | 
+| ---- | ----- | 
+| 40 | `AminoAcidLLTester.java` | 
+| | 4 points per case | 
+| 60 | `AminoAcidLL.java` | 
+| | 20 points -- `sort` |
+| | 5 points (total) -- constructors and `addCodon` | 
+| | 5 points -- `createFromRNASequence` | 
+| | 5 points (each) -- `aminoAcidList` and `aminoAcidCount` | 
+| | 10 points (each) -- `aminoAcidCompare` and `codonCompare` | 
 
-## Reccomended Completion Timeline
+## Recommended Completion Timeline
+| Class Day | Items that should be completed by date |
+| --- | --- |
+| Monday, Week 1 | develop constructor and `createFromRNASequence` unit test cases |
+| | develop the `createFromRNASequence` method |
+| | develop constructors |
+| | develop `addCodon` method | 
+| Wednesday, Week 1 | develop counting unit test cases |
+| | develop `totalCount` method | 
+| | develop `aminoAcidList` and `aminoAcidCount` methods | 
+| Monday, Week 2 | develop `sort` unit tests |
+| | develop `sort` method |
+| Wednesday, Week 2 | develop `aminoAcidCompare` and `codonCompare` unit tests |
+| | develop `aminoAcidCompare` method | 
+| | develop `codonCompare` method | 
 
