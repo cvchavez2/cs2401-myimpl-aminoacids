@@ -35,9 +35,11 @@ Your class will also have several static methods that are used to construct and 
 * `public AminoAcidLL sort(AminoAcidLL inList)` -- sorts the given linked list by the Amino Acid character in alphanumeric order and returns the new starting node. 
 
 ## Given 
-You will be provided with a java class `AminoAcidResources.java` (it is already in your repository) which will have the following methods:
+You will be provided with a java class `AminoAcidResources` (it is already in your repository) which will have the following methods:
 * `public static char getAminoAcidFromCodon(String s)` -- given a String with 3 characters, returns the Amino Acid character. If the codon is invalid the method will return NULL. If the codon is a STOP, the method will return `*`.
 * `public static String[] getCodonListForAminoAcid(char a)` -- given an Amino Acid character, returns an array of all possible codons as strings. If the character is not an AminoAcid, the method will return an empty array.  
+
+You will also recive the frame of the `AminoAcidLL` class. Do not change the existing method signitures. Additional methods may be desired and should be added as needed.
 
 ## What to turn in
 1. `AminoAcidLL.java`
