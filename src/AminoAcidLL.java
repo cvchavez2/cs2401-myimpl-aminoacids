@@ -1,4 +1,8 @@
 class AminoAcidLL{
+
+  public static void main(String[]args){
+    System.out.println("test");
+  }
   char aminoAcid;
   String[] codons;
   int[] counts;
